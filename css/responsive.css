@@ -181,6 +181,12 @@
             width: auto;
         }
     }
+    .btn-wsp{
+        
+        .icon-wsp{
+            width: 40px;
+        }
+    }
 }
 
 @media (max-width: 400px) {

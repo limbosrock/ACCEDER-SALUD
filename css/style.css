@@ -43,6 +43,25 @@ body {
 }
 
 /*header section*/
+.btn-wsp {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+}
+.btn-wsp .icon-wsp {
+  width: 80px;
+  transition: ease 1s;
+}
+
+.btn-wsp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 .hero_area {
   height: 100vh;
   background-image: url(../images/hero-b1g.jpg);
