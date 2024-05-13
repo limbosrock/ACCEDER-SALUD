@@ -96,7 +96,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 62%;
+  width: 70%;
   height: 45px;
   background: #080203;
   z-index: 1;
@@ -130,6 +130,10 @@ a:focus {
 .header_nav {
   display: flex;
   justify-content: space-between;
+}
+.header_nav .disabled {
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .main_nav {
@@ -321,16 +325,16 @@ a:focus {
 .about_section .about_container .detail-box a {
   display: inline-block;
   padding: 8px 35px;
-  background-color: #000000;
+  background-color: #D9D9D9;
   border: 1px solid transparent;
   border-radius: 35px;
-  color: #D9D9D9;
+  color: #000000;
   margin: 35px auto 35px auto;
   box-shadow: 0 0 35px 0 rgba(54, 93, 143, 0.7);
 }
 .about_section .about_container .detail-box a:hover {
-  background-color: #D9D9D9;
-  color: #000000;
+  background-color: #000000;
+  color: #D9D9D9;
 }
 
 .class_section {
@@ -667,43 +671,47 @@ a:focus {
   background-color: #000000;
   color: #D9D9D9;
 }
-.info_section .contact_section .map_container {
-  height: 100%;
-  min-height: 325px;
-}
-.info_section .contact_section .map_container .map-responsive {
-  height: 100%;
-}
 .info_section .img-box img {
   width: 100%;
 }
 
 /* footer section*/
-.footer_section {
-  margin: 25px 0;
+.footer-section {
+  background-color: #292929;
+  padding: 55px;
 }
-.footer_section .social_box {
-  display: flex;
-  align-items: center;
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.footer_section .social_box a {
-  margin-right: 15px;
+.footer-section ul li {
+  display: block;
+  margin-bottom: 10px;
 }
-.footer_section .social_box a img {
+.footer-section ul li .disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.footer-section a {
+  color: #D9D9D9;
+  text-decoration: none;
+}
+.footer-section a img {
   max-width: 25px;
   max-height: 25px;
 }
 
-.footer_section p {
-  margin: 0;
-  margin-top: 25px;
-  color: #1c1b1b;
-}
-
-.footer_section a {
-  color: #1c1b1b;
-}
-
 /* end footer section*/
+.map_container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 325px;
+  padding: 35px;
+}
+.map_container .map-responsive {
+  height: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

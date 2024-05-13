@@ -1,6 +1,6 @@
 @media (max-width: 1250px) {
     .header_section::before {
-        width: 75%;
+        width: 80%;
     }
 
     .header_section {
